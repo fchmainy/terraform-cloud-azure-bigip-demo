@@ -5,12 +5,12 @@ provider "azurerm" {
 }
 
 terraform {
-    required_version = "~> 0.12.26"
+    required_version = "~> 0.13"
     required_providers {
         azurerm = "~> 2.15.0"
     }
     backend "remote" {
-        organization = "f5-mjmenger"
+        organization = "fch"
         workspaces {
             name = "my-workspace-name"
         }
